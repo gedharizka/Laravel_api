@@ -21,7 +21,7 @@ class PostResource extends JsonResource
             'stored_at' => $this->created_at->diffForHumans(),
             // 'user' => $this->user
             'user' => new UserResource($this->user),
-            'comments' => $this->comments
+            // 'comments' => $this->comments
         ];
     }
 }
